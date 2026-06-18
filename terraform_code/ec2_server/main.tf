@@ -193,15 +193,7 @@ resource "aws_instance" "my-ec2" {
       "sudo chmod +x /usr/local/bin/kubectl",
       "kubectl version --client",
 
-      # Install Helm
-      # Ref: https://helm.sh/docs/intro/install/
-      # Ref (for .tar.gz file): https://github.com/helm/helm/releases
-      "wget https://get.helm.sh/helm-v3.16.1-linux-amd64.tar.gz",
-      "tar -zxvf helm-v3.16.1-linux-amd64.tar.gz",
-      "sudo mv linux-amd64/helm /usr/local/bin/helm",
-      "helm version",
-
-      # Install Java 17
+      # Install Java 21
       # Ref: https://www.rosehosting.com/blog/how-to-install-java-17-lts-on-ubuntu-20-04/
       "sudo apt update -y",
       "sudo apt install fontconfig openjdk-21-jre -y",
