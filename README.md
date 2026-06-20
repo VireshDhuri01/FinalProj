@@ -30,8 +30,6 @@ This project demonstrates deploying an Amazon Prime clone using a set of DevOps 
    code .   # this command will open VS code in backend
    ```
 2. **Initialize and Apply Terraform**:
-   - Run the below commands to reduce the path displayed in VS Code terminal (Optional)
-     ```bash
    - Open `terraform_code/ec2_server/main.tf` in VS Code.
    - Run the following commands:
      ```bash
