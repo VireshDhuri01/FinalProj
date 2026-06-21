@@ -50,16 +50,7 @@ resource "aws_security_group" "my-sg" {
     to_port         = 2380
     protocol        = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-  }  
-
-  # Port 3000 is required for Grafana
-  ingress {
-    description     = "NPM Port"
-    from_port       = 3000
-    to_port         = 3000
-    protocol        = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }  
+  }   
 
   # Port 6443 is required for KubeAPIServer
   ingress {
@@ -77,34 +68,7 @@ resource "aws_security_group" "my-sg" {
     to_port         = 8080
     protocol        = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-  }  
-
-  # Port 9000 is required for SonarQube
-  ingress {
-    description     = "SonarQube Port"
-    from_port       = 9000
-    to_port         = 9000
-    protocol        = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }  
-
-  # Port 9090 is required for Prometheus
-  ingress {
-    description     = "Prometheus Port"
-    from_port       = 9090
-    to_port         = 9090
-    protocol        = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }  
-
-  # Port 9100 is required for Prometheus metrics server
-  ingress {
-    description     = "Prometheus Metrics Port"
-    from_port       = 9100
-    to_port         = 9100
-    protocol        = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  } 
+  }    
 
   # Port 10250-10260 is required for K8s
   ingress {
