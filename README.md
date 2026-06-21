@@ -1,5 +1,8 @@
 # Amazon Prime Clone Deployment Project
 
+## Project Architecture
+![Project Architecture](architecture.png)
+
 ## Project Overview
 This project demonstrates deploying an Amazon Prime clone using a set of DevOps tools and practices. The primary tools include:
 
